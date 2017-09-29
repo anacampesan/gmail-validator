@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/app.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="emails">E-mails (one per line)</label>
+            <textarea name="emails" id="emails" class="form-control"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <button class="btn btn-success" id="btn">Validate</button>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-md-6">
+          <strong>Already taken:</strong>
+          <br>
+          <ul id="taken"></ul>
+        </div>
+
+        <div class="col-md-6">
+          <strong>Available:</strong>
+          <br>
+          <ul id="available"></ul>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <script src="./scripts/jquery.min.js"></script>
+    <script src="./scripts/bootstrap.min.js"></script>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
